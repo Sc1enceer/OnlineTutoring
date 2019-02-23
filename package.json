@@ -7,11 +7,13 @@
     "react-scripts": "2.1.5"
   },
   "dependencies": {
+    "firebase": "^5.8.4",
     "history": "^4.6.3",
     "marked": "^0.6.1",
     "prop-types": "^15.5.10",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
+    "react-firebaseui": "^3.1.2",
     "react-redux": "^6.0.1",
     "react-router-dom": "^4.3.1",
     "react-router-redux": "^5.0.0-alpha.9",
@@ -23,7 +25,7 @@
     "superagent-promise": "^1.1.0"
   },
   "scripts": {
-    "start": "cross-env PORT=4100 react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
