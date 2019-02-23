@@ -78,6 +78,10 @@ class Header extends React.Component {
           <Link to="/" className="navbar-brand">
             {this.props.appName.toLowerCase()}
           </Link>
+
+          <LoggedOutView currentUser={this.props.currentUser} />
+
+          <LoggedInView currentUser={this.props.currentUser} />
         </div>
       </nav>
     );
