@@ -1,0 +1,54 @@
+<html>
+<head>
+	<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-storage.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src='userProfile.js'></script>
+	<script src='createUser.js'></script>
+	<style>
+		table, th, td {
+		border: 1px solid black;
+		}
+		
+		table {
+		width: 50%
+		}
+		.profilePic {
+		border: 1px solid black;
+		width: 100px;
+		height: 100px;
+		float: left;
+		margin-right: 25px;
+		}
+		.info {
+		border: 1px solid black;
+		width: 100%;
+		margin: 25px 0px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div class='profilePic'><img id='profilePic'></div>
+		<h1 id='name'></h1>
+		<h2 id='email'></h2>
+	</div>
+	<div class = 'info'>
+		<h1>Bio</h1>
+		<p id='bio'></p>
+	</div>
+	<div class = 'info'>
+		<h1>Skills</h1>
+		<ul id = 'skills'></ul>
+	</div>
+	<div class = 'info'>
+		<h1>Tutor Statistics</h1>
+		<ul>
+		<li id='avgRating'>Average Rating: </li>
+		<li id='numRatings'>Total Ratings: </li>
+		</ul>
+	</div>
+
+</body>
+</html>
